@@ -47,4 +47,5 @@ jobs:
       - name: Report site URL
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
-        run: echo "Site URL: $PAGE_URL" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "Site URL: $PAGE_URL" >> "$GITHUB_STEP_SUMMARY"
