@@ -35,7 +35,7 @@
      <a href="#industries">
       Industries
      </a>
-     <a class="btn small" href="#contact">
+     <a aria-controls="lead-dialog" aria-haspopup="dialog" class="btn small lead-dialog-trigger" href="#contact">
       Meet us at GITEX ↗
      </a>
     </nav>
@@ -85,7 +85,7 @@
         and drive meaningful business impact.
       </p>
       <div class="actions">
-       <a class="btn" href="#contact">
+       <a aria-controls="lead-dialog" aria-haspopup="dialog" class="btn lead-dialog-trigger" href="#contact">
         Schedule a meeting ↗
        </a>
        <a class="btn outline" href="#capabilities">
@@ -194,30 +194,29 @@
       </p>
      </div>
      <div class="partners">
-      <div>
-       <img alt="Oracle logo" src="assets/img/oracle_logo.svg"/>
-      </div>
-      <div>
-       <img alt="SAP logo" src="assets/img/SAP%20logo.svg"/>
-      </div>
-      <div>
-       <img alt="Microsoft logo" src="assets/img/Microsoft.svg"/>
-      </div>
-      <div>
-       <img alt="Salesforce logo" src="assets/img/Salesforce%20Logo.png"/>
-      </div>
-      <div>
-       <img alt="ServiceNow logo" src="assets/img/ServiceNow_logo.svg"/>
-      </div>
-      <div>
-       <img alt="Newgen logo" src="assets/img/newgen.png"/>
-      </div>
-     <div class="modern-partner">
-  <img
-    src="assets/img/modern.png"
-    alt="Modern Engineering"
-  />
-</div>
+      <a href="https://www.awcsoftware.com/services/technologies/oracle-applications-erp-services">
+       <div><img alt="Oracle logo" src="assets/img/oracle_logo.svg"/></div>
+      </a>
+      <a href="https://www.awcsoftware.com/services/offerings/sap-services">
+       <div><img alt="SAP logo" src="assets/img/SAP%20logo.svg"/></div>
+      </a>
+      <a href="https://www.awcsoftware.com/services/technologies/microsoft-technologies">
+       <div><img alt="Microsoft logo" src="assets/img/Microsoft.svg"/></div>
+      </a>
+      <a href="https://www.awcsoftware.com/services/offerings/salesforce-solutions">
+       <div><img alt="Salesforce logo" src="assets/img/Salesforce%20Logo.png"/></div>
+      </a>
+      <a href="https://www.awcsoftware.com/services/offerings/servicenow">
+       <div><img alt="ServiceNow logo" src="assets/img/ServiceNow_logo.svg"/></div>
+      </a>
+      <a href="https://www.awcsoftware.com/services/technologies/low-code-no-code">
+       <div><img alt="Newgen logo" src="assets/img/newgen.png"/></div>
+      </a>
+      <a href="#">
+       <div class="modern-partner">
+        <img src="assets/img/modern.png" alt="Modern Engineering"/>
+       </div>
+      </a>
      </div>
      <div class="tech-grid" id="tech-grid">
      </div>
@@ -332,7 +331,7 @@
        <p>
         Modernize technology, automate complex workflows and build scalable digital experiences.
        </p>
-       <a class="btn" href="#contact">
+       <a aria-controls="lead-dialog" aria-haspopup="dialog" class="btn lead-dialog-trigger" href="#contact">
         Discuss your transformation ↗
        </a>
       </div>
@@ -456,7 +455,7 @@
         Arabic &amp; English
        </span>
       </div>
-      <a class="btn" href="#contact">
+      <a aria-controls="lead-dialog" aria-haspopup="dialog" class="btn lead-dialog-trigger" href="#contact">
        Request an AI readiness check ↗
       </a>
      </div>
@@ -811,7 +810,7 @@
       </div>
      </div>
      <form action="lead.php" id="lead-form" method="post">
-      <h3>
+      <h3 id="lead-form-title">
        Book a meeting
       </h3>
       <p>
@@ -885,6 +884,13 @@
      </form>
     </div>
    </section>
+   <dialog aria-labelledby="lead-form-title" class="lead-dialog" id="lead-dialog">
+    <div class="lead-dialog-content">
+     <button aria-label="Close enquiry form" class="lead-dialog-close" type="button">
+      &times;
+     </button>
+    </div>
+   </dialog>
   </main>
   <footer>
    <div class="wrap foot">
