@@ -9,7 +9,7 @@
    AWC Software | GITEX 2026 – AI-led Enterprise Transformation
   </title>
   <link href="assets/img/logo.png" rel="icon"/>
-  <link href="assets/style.css" rel="stylesheet"/>
+  <link href="assets/style.css?v=20261127.5" rel="stylesheet"/>
   <script defer="" src="assets/app.js">
   </script>
  </head>
@@ -119,12 +119,45 @@
        </div>
       </div>
      </div>
-     <div class="hero-art">
-      <img alt="AWC AI-powered digital transformation" src="assets/img/hero.png"/>
-      <div class="art-label">
-       <span class="pulse">
-       </span>
-       AI / INTELLIGENCE CONNECTED
+     <div aria-label="AWC enterprise technology ecosystem connecting business applications, cloud, data insights and digital growth" class="hero-art hero-network" role="img">
+      <div aria-hidden="true" class="network-grid"></div>
+      <div aria-hidden="true" class="network-topbar">
+       <span>AWC / DIGITAL ECOSYSTEM</span>
+       <span class="network-status"><i></i>CONNECTED</span>
+      </div>
+      <svg aria-hidden="true" class="network-connections" viewBox="0 0 500 500">
+       <path d="M250 250 C210 210 175 175 115 150"/>
+       <path d="M250 250 C290 210 325 175 385 150"/>
+       <path d="M250 250 C210 290 175 325 115 350"/>
+       <path d="M250 250 C290 290 325 325 385 350"/>
+       <circle cx="250" cy="250" r="5"/>
+       <circle cx="115" cy="150" r="4"/>
+       <circle cx="385" cy="150" r="4"/>
+       <circle cx="115" cy="350" r="4"/>
+       <circle cx="385" cy="350" r="4"/>
+      </svg>
+      <div aria-hidden="true" class="network-core">
+       <span>AWC</span>
+       <b>CONNECTED CORE</b>
+      </div>
+      <div aria-hidden="true" class="network-node network-node-apps">
+       <span>▦</span>
+       <div><b>Enterprise apps</b><small>Systems &amp; platforms</small></div>
+      </div>
+      <div aria-hidden="true" class="network-node network-node-cloud">
+       <span>☁</span>
+       <div><b>Cloud</b><small>Built to scale</small></div>
+      </div>
+      <div aria-hidden="true" class="network-node network-node-data">
+       <span>⌁</span>
+       <div><b>Data insights</b><small>Decisions with clarity</small></div>
+      </div>
+      <div aria-hidden="true" class="network-node network-node-growth">
+       <span>↗</span>
+       <div><b>Digital growth</b><small>Progress that lasts</small></div>
+      </div>
+      <div aria-hidden="true" class="network-footer">
+       <span>CONNECT</span><i></i><span>ORCHESTRATE</span><i></i><span>GROW</span>
       </div>
      </div>
     </div>
@@ -133,7 +166,7 @@
     <div class="wrap stat-grid">
      <div>
       <strong>
-       19
+       <bdi class="stat-count" data-count="19">19</bdi>
        <span>
         +
        </span>
@@ -144,7 +177,7 @@
      </div>
      <div>
       <strong>
-       750
+       <bdi class="stat-count" data-count="750">750</bdi>
        <span>
         +
        </span>
@@ -155,7 +188,7 @@
      </div>
      <div>
       <strong>
-       100
+       <bdi class="stat-count" data-count="100">100</bdi>
        <span>
         +
        </span>
@@ -166,7 +199,7 @@
      </div>
      <div>
       <strong>
-       10
+       <bdi class="stat-count" data-count="10">10</bdi>
        <span>
         +
        </span>
@@ -417,13 +450,32 @@
    </section>
    <section class="section ai-section" id="ai">
     <div class="wrap ai-grid">
-     <div class="ai-visual">
-      <img alt="AI-powered enterprise intelligence" src="assets/img/hero.png"/>
-      <div class="ai-chip">
-       AI
-       <span>
-        / FACTORY
-       </span>
+     <div aria-label="People-first enterprise AI connecting people, trust, insight and impact" class="ai-visual human-ai-visual" role="img">
+      <div aria-hidden="true" class="human-ai-orbit human-ai-orbit-one"></div>
+      <div aria-hidden="true" class="human-ai-orbit human-ai-orbit-two"></div>
+      <div aria-hidden="true" class="human-ai-center">
+       <svg viewBox="0 0 64 64">
+        <circle cx="32" cy="21" r="10"></circle>
+        <path d="M13 54c1.8-11 8.6-17 19-17s17.2 6 19 17"></path>
+        <path d="M21 45c3 2 7 3 11 3s8-1 11-3"></path>
+       </svg>
+       <span>PEOPLE FIRST</span>
+      </div>
+      <div aria-hidden="true" class="human-ai-node human-node-1">
+       <span>♡</span>
+       <b>People</b>
+      </div>
+      <div aria-hidden="true" class="human-ai-node human-node-2">
+       <span>◉</span>
+       <b>Trust</b>
+      </div>
+      <div aria-hidden="true" class="human-ai-node human-node-3">
+       <span>⌁</span>
+       <b>Insight</b>
+      </div>
+      <div aria-hidden="true" class="human-ai-node human-node-4">
+       <span>↗</span>
+       <b>Impact</b>
       </div>
      </div>
      <div>
@@ -534,11 +586,34 @@
      </div>
     </div>
    </section>
+   <section class="section clients-section" id="clients">
+    <div class="wrap">
+     <div class="section-head">
+      <div class="eyebrow">
+       06 / OUR CLIENTS
+      </div>
+      <h2>
+       Our
+       <span>
+        clients.
+       </span>
+      </h2>
+      <p>
+       A selection of organizations partnering with AWC for their technology transformation.
+      </p>
+     </div>
+     <div aria-label="Client logo carousel" aria-roledescription="carousel" class="client-slider" role="region">
+      <div aria-label="Client logos" class="client-slider-viewport" id="client-viewport" tabindex="0">
+       <div class="client-slider-track" id="client-track"></div>
+      </div>
+     </div>
+    </div>
+   </section>
    <section class="section" id="industries">
     <div class="wrap">
      <div class="section-head">
       <div class="eyebrow">
-       06 / INDUSTRY EXPERIENCE
+       07 / INDUSTRY EXPERIENCE
       </div>
       <h2>
        Built for
@@ -558,7 +633,7 @@
     <div class="wrap">
      <div class="section-head">
       <div class="eyebrow">
-       07 / PROVEN DELIVERY
+       08 / PROVEN DELIVERY
       </div>
       <h2>
        Transformation
@@ -609,7 +684,7 @@
      <div class="global-presence" id="global">
       <div class="section-head">
        <div class="eyebrow">
-        08 / GLOBAL PRESENCE
+        09 / GLOBAL PRESENCE
        </div>
        <h2>
         Globally connected.
@@ -670,7 +745,7 @@
     <div class="wrap">
      <div class="section-head">
       <div class="eyebrow">
-       09 / WHY AWC SOFTWARE
+       10 / WHY AWC SOFTWARE
       </div>
       <h2>
        Trusted expertise.
@@ -826,14 +901,6 @@
         <input autocomplete="email" maxlength="180" name="email" placeholder="you@company.com" required="" type="email"/>
        </label>
        <label>
-        Company *
-        <input autocomplete="organization" maxlength="150" name="company" placeholder="Company name" required=""/>
-       </label>
-       <label>
-        Phone / WhatsApp
-        <input autocomplete="tel" maxlength="40" name="phone" placeholder="+971 ..." type="tel"/>
-       </label>
-       <label class="full">
         Interested in *
         <select name="interest" required="">
          <option value="">
@@ -861,6 +928,10 @@
           Other
          </option>
         </select>
+       </label>
+       <label>
+        Phone / WhatsApp
+        <input autocomplete="tel" maxlength="40" name="phone" placeholder="+971 ..." type="tel"/>
        </label>
        <label class="full">
         Your requirements
